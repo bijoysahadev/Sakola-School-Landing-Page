@@ -1,0 +1,106 @@
+.hidden {
+    display: none;
+}
+/* mobile devices (max-width 480px) */
+@media(max-width:480px){
+.nav_items {
+    display: none;
+}    
+.menu-btn {
+    display: none;
+}
+.header *> {
+    margin: 0;
+}
+.hero-container {
+    flex-direction: column;
+    height: auto;
+}
+.her0-image {
+    width: 100%;
+}
+.hero-text h1.heading {
+    width: 100%;
+    text-align: center;
+}
+.school-section h2.heading {
+    width: 100%;
+}
+.hero-text p {
+    width: 100%;
+    text-align: center;
+}
+.btn-group{
+    flex-direction: column;
+    text-align: center;
+}
+.btn,  .outline-btn {
+  width: 100%;
+}
+/* about section */
+.about-section {
+    flex-direction: column;
+}
+.about-image, .about-info {
+    width: 100%;
+}
+.about-info h2.heading {
+    width: 100%;
+}
+.why-us-box {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+}
+.icon-text {
+    height: auto;
+}
+h3 {
+    line-height: 1.5;
+}
+.icon {
+    flex-shrink: 0;
+}
+/* about section */
+/* school section */
+.school-section {
+    flex-direction: column;
+}
+.school-section h2.heading {
+    width: 100%;
+}
+.heading {
+    font-size:2 rem ;
+}
+/* school section */
+/* studying section */
+.classes-section h2.heading {
+    width: 100%;
+}
+.class-cards {
+    grid-template-columns: repeat(1,1fr);
+}
+.classes-section {
+    padding: 15px;
+}
+/* studying section */
+/* newsletter section */
+.newsletter .content {
+    padding: 15px;
+}
+.newsletter .content h2 {
+    font-size: 2rem;
+}
+/* newsletter section */
+/* footer section */
+.footer {
+    grid-template-columns: repeat(1,1fr);
+}
+/* footer section */
+}
+/* mobile version */
+/* tablet version (min-widthj 481px) max-width (768px) */
+@media screen and (min-width :481px) and (max-width :768px) {
+    
+}
+/* tablet version */

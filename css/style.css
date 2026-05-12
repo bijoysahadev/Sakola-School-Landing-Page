@@ -12,7 +12,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 :root{
     --primary-color:  rgba(0, 13, 131,1) ;
@@ -22,6 +22,9 @@ body {
     --sub_heading_font_seize : 1.125rem ;
     --heading_font_sezie : 2.5rem;
 
+}
+html {
+    scroll-behavior: smooth;
 }
 /* comnon css ends here */
 /* header  section css starts here */
@@ -115,7 +118,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     gap: 2rem;
 }
 .her0-image {
@@ -137,10 +140,11 @@ nav ul li a:hover {
     margin-bottom: 24px;
    
 }
-.hero-text h1.heading{
+.hero-text h1.heading,.school-section h2.heading {
     width: 60%;
    
 }
+
 p {
     font-size: 1rem;
     color: var(--primary-text-color);
@@ -294,3 +298,175 @@ h3 {
 
 /* about section css ends here  */
 /* hero section styling ends */
+/* school section starts here */
+.school-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 15px;
+}
+.school-section .text-content  p {
+    width: 60%;
+}
+/* school section starts ends */
+/* studying section css starts here */
+.class-content{
+    text-align: center;
+
+}
+.classes-section h2.heading {
+    width: 42%;
+    margin: 0 auto;
+}
+.class-cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    justify-content: center;
+}
+.class-card {
+    background-color: #ffff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition:  all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+.class-card:hover{
+    transform: translateY(-5px);
+}
+.course-image {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+.course-tittle{
+    font-size: 1.2rem;
+    color: #040931;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.studnet-count {
+     color: #555;
+     font-size: 0.87rem;
+     margin-bottom: 10px;
+}
+.star-rating{
+    color: #FDC350;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+/* studying section css ends here */
+/* newsletter section css starts here */
+.newsletter {
+    position: relative;
+    height: 450px;
+    background-image: url(../images/news-letter.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+
+}
+.newsletter .overly {
+    background-color:#000D83d7 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+
+}
+.newsletter .content {
+    text-align: center;
+    color: white;
+}
+.newsletter .content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.newsletter p {
+    margin-bottom: 30px;
+    color: white;
+}
+.newsletter .btn {
+    background-color: var(--seconday-color);
+}
+/* newsletter section css ends here */
+/* main css ends here */
+/* footer css starts here */
+footer {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 15px;
+
+}
+.footer{
+    max-width: 1440px;
+    margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat( 5, 1fr);
+   justify-content: center;
+   padding: 50px 20px;
+   gap: 2rem;
+
+  
+}
+.footer-section {
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-section h4 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+.footer-section p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+footer .logo img {
+max-width: 150px;
+
+}
+.social-media a {
+    color: var(--primary-text-color);
+    margin-right: 15px;
+    background-color: var(--seconday-color);
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+}
+.social-media a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-10px);
+}
+footer ul {
+    padding: 0;
+}
+footer ul li {
+    margin-bottom: 10px;
+}
+footer ul li a {
+    color: var(--primary-text-color);
+    transition: .5s;
+
+}
+footer ul li a:hover {
+    color: var(--seconday-color);
+    text-decoration: underline;
+}
+
+/* footer css ends here */
